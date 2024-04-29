@@ -10,6 +10,9 @@ sudo curl -L https://get.rvm.io | bash -s stable --ruby
 rvm use ruby-3.1.1
 rvm --default use 3.1.1 
 
+## Config
+bundle exec jekyll serve
+
 
 
 <!--
