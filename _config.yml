@@ -3,8 +3,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Alejandro Dinamarca" # the name of your site, e.g. ACME Corp.
 email: "alejandro.dinamarca.u@gmail.com"
 
+domain: "aledinamarca.github.io"      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: "https://aledinamarca.github.io"  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: ""   
+
 personal:
   name: "Alejandro Dinamarca"
   email: "alejandro.dinamarca.u@gmail.com"
-  phone: "12345"
+  phone: "+56930143360"
   github: "dinalejo"

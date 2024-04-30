@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            color: #333;
         }
         header {
             display: flex;
@@ -21,23 +20,30 @@
         .header-right {
             text-align: right;
             font-size: 16px;
+            margin-bottom: 5px;
+            width: 30%;
         }
-        .contact-info {
-            margin-bottom: 4px;
+        
+        h2{
+            margin-bottom: 0;
         }
-        section {
-            margin-top: 20px;
-        }
+        
         .job-title {
             font-weight: bold;
+            margin-bottom: 0;
         }
         .job-description {
+            margin-top: 15px;
+            text-align: justify;
+        }
+        .job-function {
             margin-top: 5px;
             margin-left: 20px;
         }
         .personal-description {
             margin-top: 1px;
         }
+
 
         #skills-container {
             display: flex;
@@ -58,9 +64,9 @@
         </div>
        
         <div class="header-right">
-            <div class="contact-info">Email: <a href="mailto: {{ site.email }}">{{ site.personal.email }}</a></div>
-            <div class="contact-info">Phone : {{ site.personal.phone }}</div>
-            <div class="contact-info">github: {{ site.personal.github }}</div>
+            <div class="fa fa-envelope"> {{ site.personal.email }}</div><br />
+            <div class="fa fa-phone"> {{ site.personal.phone }}</div><br />
+            <div class="fa fa-github"> {{ site.personal.github }}</div>
         </div>
     </header>
 
@@ -77,64 +83,138 @@
                 </div>
                 <div>
                     <ul >
-                        <li>Java - Python</li>
-                        <li>Spring</li>
+                        <li>Google Cloud</li>
+                        <li>Docker - Kubernetes</li>
+                        <li>Jenkins - CICD</li>
                     </ul>
                 </div>
                 <div>
                     <ul >
-                        <li>Java - Python</li>
-                        <li>Spring</li>
+                        <li>Terraform</li>
+                        <li>Linux - bash</li>
+                        <li>Mysql - Postresql</li>
                     </ul>
                 </div>
             </div>
 
         </div>
     </section>
-
+ <!-- Work Experience -->
     <section>
         <h2>Work Experience</h2>
         <hr>
         <div>
-            <div class="job-title">Lead Architect</div>
-            <div>January 2020 - Present</div>
-            <ul class="job-description">
-                <li>xyz.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</li>
+            <div class="job-title">Latam Airlines - Lead Architect</div>
+            <div>January 2021 - Present</div>
+            <div class="job-description"> Team leader of Enterprise architecture team in charge of different functions including, development, technology roadmap, architecture practices, develop and maintain the  technology guidelines a cross the different business architecture teams. </div>
+            <ul class="job-function">
+                <li> Team leader of 4 Architect and 2 Development Team.    </li>
+                <li> Plan and implement the upgrade of legacy platforms.</li>
+                <li> In charge of the run of 5 Cross Applications.</li>
+                <li> Co-work with specialist teams to design cross company solutions.</li>
+                <li> Technology Roadmap.</li>
+                <li> Implement no code and low code platform on non it areas</li>
+
             </ul>
         </div>
         <div>
-            <div class="job-title">Cloud Engineer.</div>
-            <div>June 2012 - December 2015</div>
-            <ul class="job-description">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</li>
+            <div class="job-title">Latam Airlines - Architect</div>
+            <div>2020 - 2021</div>
+            <div class="job-description">Team leader of Software Development architect department in charge to promote development and architecture practices to cross company developers teams. </div>
+            <ul class="job-function">
+                <li> Design and implement development templates to development teams.</li>
+                <li> Investigate new technologies.</li>
+                <li> Team leader of 3 Development.</li>
+                <li>Promote best practices for Spring Cloud, Angular, GCP, Kubernetes and mobile.</li>
+                <li>Identify Developers and promote community practices.</li>
+                <li>Co-work with specialist teams to design cross company solutions.</li>
             </ul>
         </div>
+
+
+        <p style="page-break-after: always"></p>
+
+
+        <div>
+            <div class="job-title">Latam Airlines - Cloud Engineer</div>
+            <div>2018 - 2020</div>
+            <div class="job-description">Cloud Engineer in charge to help the business projects to design and implement correctly the Google Cloud Platform infrastructure components and accompany the project team during the live cycle to resolve technical questions and issues.</div>
+            <ul class="job-function">
+                <li> Technical Lead at right sizing infrastructure process.</li>
+                <li>Promote the devops culture.</li>
+                <li>Estimate the dimension of the infrastructure workload.</li>
+                <li>Design solution and Cloud Infrastructure.</li>
+                <li>Help developer teams to understand the Application and infrastructure Pipeline. </li>
+                <li>Help project teams to resolve issues and technical questions.</li>
+                <li>Ensure the highest availability and redundancy of the products.</li>
+                <li>Develop Python Apps with django framework.</li>
+            </ul>
+        </div>
+
+
+        <div>
+            <div class="job-title">Banco BCI - Cloud Engineer</div>
+            <div>2017 - 2018</div>
+            <div class="job-description">Cloud engineer in charge of the administration of the cloud environments, productives and non-productives of the bank under technologies like Kubernetes, Dockers, Linux with the cloud provider Bluemix, bringing continuity of the services.</div>
+            <ul class="job-function">
+                <li>Admin and manage cloud infrastructure.</li>
+                <li>Analise incident on kubernetes and bluemix platform.</li>
+                <li>Migration of the legacy Sybase systems. </li>
+                <li>Propose and apply improvement on the cloud environments.</li>
+                <li>Apply Agile methodologies to help the business requirements.</li>
+                <li>Promote the knowledge management process.</li>
+            </ul>
+        </div>
+
+        <div>
+            <div class="job-title">LATAM AIRLINES - SYSTEM ENGINEER</div>
+            <div>2014 - 2017</div>
+            <div class="job-description">Technical Lead engineer in charge of the administration of the operational critical system of the company,  developing experiences on monitoring tools like Nagios, Centreo, Introscope and Dynatrace, performing analysis of performance on servers and applications, proactively identifying performance issues and incidentes. </div>
+            <ul class="job-function">
+                <li>Create postmortems incident reports.</li>
+                <li>Maintain operational continuity of the application and services.</li>
+                <li>Ensure the process of continuous improvement of services.</li>
+                <li>Perform the technical administration of the application and services.</li>
+                <li>Manage the proper delivery of  contracted service to third parties.</li> 
+                <li>Propose plans for improve the performance of system.</li>
+                <li>Analyse system failures for its improvement.</li>
+                <li>Performance analysis of JAVA application.</li>
+                <li>Implementation of the Knowledge management process.</li>
+                <li>Develop tools for monitoring and analysis of the system.</li>
+                <li>Manage the quality and integrity of SLA registry based on ITIL.</li>
+            </ul>
+        </div>
+
+        <p style="page-break-after: always"></p>
+
+        <div>
+            <div class="job-title">LATAM AIRLINES - SOFTWARE DEVELOPER</div>
+            <div>2013</div>
+            <div class="job-description">Support multi-core project migrating Oracle form to the corporative standar using Java under the architecture JEE, applying the framework Spring and using JPA (Hibernate)
+            </div>
+            <ul class="job-function">
+                <li>Develop Java application.</li>
+                <li>Identify application issues and perform the improvement.</li>
+                <li>Development application under Weblogic application Server.</li>
+                <li>Document the product developed and perform the delivery to the production team.</li>
+                
+            </ul>
+        </div>
+
     </section>
 
+    <!-- Education -->
     <section>
         <h2>Education</h2>
         <hr>
         <div>
-            <div class="job-title">First Education</div>
-            <div>Second Education</div>
+            <div class="job-title">PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE</div>
+            <div>Programa Postítulo Gestión en Tecnologías de Información INGES.</div>
         </div>
         <div>
-            <div class="job-title">Second education</div>
-            <div>University</div>
+            <div class="job-title">INSTITUTO PROFESIONAL DUOC UC            </div>
+            <div>Ingeniero en Informática </div>
         </div>
     </section>
-
-    <section>
-        <h2>Skills</h2>
-        <hr>
-        <ul>
-            <li>Proficient in: Java, Python, SQL</li>
-            <li>Frameworks/Tools: Dker/li>
-            <li>TBD.</li>
-        </ul>
-    </section>
-
 </body>
 </html>

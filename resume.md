@@ -3,4 +3,4 @@ layout: resume
 permalink: /resume/
 ---
 
-this is my personal sumary
+Softare Engineer with 9 year experience on IT, SRE / Devops, Cloud architect
